@@ -4,7 +4,7 @@ A beautiful and interactive travel website built with React, featuring modern UI
 
 ![Wanderlust Travel Website](https://your-screenshot-url.com)
 
-## Features
+## Features.
 
 - 🌅 Stunning hero section with dynamic background
 - 🗺️ Interactive destination showcase
