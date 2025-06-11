@@ -1,0 +1,19 @@
+
+.service-detail {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.service-detail h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.service-detail ul {
+  padding-left: 1.5rem;
+  list-style: disc;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,115 @@
+.home {
+  overflow-x: hidden;
+  background-color: var(--background-color);
+}
+
+.section-divider {
+  height: 3px;
+  background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+  margin: 2rem auto;
+  max-width: 80%;
+  opacity: 0.3;
+}
+
+.section-light {
+  background-color: var(--light-gray);
+  padding: 4rem 0;
+  position: relative;
+}
+
+.section-light::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, var(--background-color) 0%, var(--light-gray) 100%);
+}
+
+.section-light::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to top, var(--background-color) 0%, var(--light-gray) 100%);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade-in animation for sections */
+.features-container,
+.destination,
+.statistics-container,
+.trip,
+.testimonials-container,
+.newsletter-container {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger the animations */
+.features-container {
+  animation-delay: 0.2s;
+}
+
+.destination {
+  animation-delay: 0.4s;
+}
+
+.statistics-container {
+  animation-delay: 0.6s;
+}
+
+.trip {
+  animation-delay: 0.8s;
+}
+
+.testimonials-container {
+  animation-delay: 1s;
+}
+
+.newsletter-container {
+  animation-delay: 1.2s;
+}
+
+/* Hover effects for interactive elements */
+.button:hover,
+.card:hover,
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .section-light {
+    padding: 3rem 0;
+  }
+
+  .section-light::before,
+  .section-light::after {
+    height: 50px;
+  }
+
+  .section-divider {
+    margin: 1.5rem auto;
+  }
+} 
